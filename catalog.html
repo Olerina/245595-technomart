@@ -72,20 +72,20 @@
             <p>Фильтр</p>
             <div class="price">
               <label for="price-selection">Цена</label>
-              <input type="range" id="price-selection" name="price-selection" min="0" max="30000" step="100">
+              <input type="range" id="price-selection" name="price-selection" min="0" max="30000" step="100"><!--Пока оставила так, после соответствующего вебинара поправлю-->
               <input type="text" value="0" autocomplete="off" class="price-min">
               <input type="text" value="30000" autocomplete="off" class="price-max">
             </div>
-            <section class="making">
-              <h2 class="making-title">Производители</h2>
+            <section class="option">
+              <h2 class="option-title">Производители</h2>
               <input type="checkbox" checked id="bosch"><label for="bosch">BOSCH</label>
               <input type="checkbox" id="interscol"><label for="interscol">ИНТЕРСКОЛ</label>
               <input type="checkbox" checked id="makita"><label for="makita">MAKITA</label>
               <input type="checkbox" id="dewalt"><label for="dewalt">DEWALT</label>
               <input type="checkbox" id="hitachi"><label for="hitachi">HITACHI</label>
             </section>
-            <section class="supply">
-              <h2 class="supply-title">Питание</h2>
+            <section class="option">
+              <h2 class="option-title">Питание</h2>
               <label><input type="radio" name="supply-group" checked>Аккумуляторные</label>
               <label><input type="radio" name="supply-group">Сетевые</label>
             </section>
@@ -95,70 +95,109 @@
         <div class="catalog-right">
           <div class="sorting">
             <p>Сортировка</p>
-            <a class="sorting-item" href="#">По цене</a>
-            <a class="sorting-item" href="#">По типу</a>
-            <a class="sorting-item" href="#">По функчионалу</a>
-            <a class="sorting-item up" href="#">По возрастанию</a>
-            <a class="sorting-item down" href="#">По убыванию</a>
+            <div class="sorting-left">
+              <a class="sorting-item" href="#">По цене</a>
+              <a class="sorting-item" href="#">По типу</a>
+              <a class="sorting-item" href="#">По функчионалу</a>
+            </div>
+            <div class="sorting-right">
+              <a class="sorting-item up" href="#">По возрастанию</a>
+              <a class="sorting-item down" href="#">По убыванию</a>
+            </div>
           </div>
-          <div class="catalog item">
+          <div class="catalog-item">
             <article class="top-item">
-              <img src="#" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
-              <p class="top-item-title">Перфоратор BOSH BFG 3000</p>
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 3000</a>
               <p class="top-item-sale">22500 р.</p>
-              <a class="btn buy" href="#">15500 р.</a>
+              <p class="top-item-price">15500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
             <article class="top-item">
-              <img src="#" width="127" height="112" alt="Перфоратор BOSH BFG 6000">
-              <p class="top-item-title">Перфоратор BOSH BFG 6000</p>
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 6000</a>
               <p class="top-item-sale">30500 р.</p>
-              <a class="btn buy" href="#">25500 р.</a>
+              <p class="top-item-price">25500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
-            <article class="top-item">
-              <a class="btn buy" href="#">Купить</a>
-              <a class="in-link" href="#">В закладки</a>
-              <p class="top-item-title">Перфоратор BOSH BFG 2000</p>
+            <article class="top-item new">
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 2000</a>
               <p class="top-item-sale"></p>
-              <a class="btn buy" href="#">12500 р.</a>
+              <p class="top-item-price">12500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
             <article class="top-item">
-              <img src="#" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
-              <p class="top-item-title">Перфоратор BOSH BFG 3000</p>
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 3000</a>
               <p class="top-item-sale">22500 р.</p>
-              <a class="btn buy" href="#">15500 р.</a>
+              <p class="top-item-price">15500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
-            <article class="top-item">
-              <img src="#" width="127" height="112" alt="Перфоратор BOSH BFG 6000">
-              <p class="top-item-title">Перфоратор BOSH BFG 6000</p>
+            <article class="top-item new">
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 6000</a>
               <p class="top-item-sale">30500 р.</p>
-              <a class="btn buy" href="#">25500 р.</a>
+              <p class="top-item-price">25500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
             <article class="top-item">
-              <img src="#" width="127" height="112" alt="Перфоратор BOSH BFG 2000">
-              <p class="top-item-title">Перфоратор BOSH BFG 2000</p>
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 2000</a>
               <p class="top-item-sale"></p>
-              <a class="btn buy" href="#">12500 р.</a>
+              <p class="top-item-price">12500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
-            <article class="top-item">
-              <img src="#" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
-              <p class="top-item-title">Перфоратор BOSH BFG 3000</p>
+            <article class="top-item new">
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 3000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 3000</a>
               <p class="top-item-sale">22500 р.</p>
-              <a class="btn buy" href="#">15500 р.</a>
+              <p class="top-item-price">15500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
             <article class="top-item">
-              <img src="#" width="127" height="112" alt="Перфоратор BOSH BFG 6000">
-              <p class="top-item-title">Перфоратор BOSH BFG 6000</p>
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 6000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 6000</a>
               <p class="top-item-sale">30500 р.</p>
-              <a class="btn buy" href="#">25500 р.</a>
+              <p class="top-item-price">25500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
             <article class="top-item">
-              <img src="#" width="127" height="112" alt="Перфоратор BOSH BFG 2000">
-              <p class="top-item-title">Перфоратор BOSH BFG 2000</p>
+              <img src="#" width="184" height="164" alt="Перфоратор BOSH BFG 2000">
+              <a  class="top-item-title" href="#">Перфоратор BOSH BFG 2000</a>
               <p class="top-item-sale"></p>
-              <a class="btn buy" href="#">12500 р.</a>
+              <p class="top-item-price">12500 р.</p>
+              <div class="top-item-btn">
+                <a class="item-btn" href="#">Купить</a>
+                <a class="item-btn" href="#">В закладки</a>
+              </div>
             </article>
             <div class="navigation">
-              <a href="#1" class="page-number active-nav">1</a>
+              <a class="page-number active-nav">1</a>
               <a href="#2" class="page-number">2</a>
               <a href="#3" class="page-number">3</a>
               <a href="next" class="page-number">Следующая</a>
@@ -219,12 +258,10 @@
       </div>
     </footer>
     <div class="modal-write">
-      <form class="modal-bascket-form" action="https://echo.htmlacademy.ru" method="post">
-        <a href="#close" title="Закрыть" class="close">X</a>
-        <p>Товар добавлен в корзину!</p>
-        <input type="submit" value="Оформить заказ" class="btn bascket-btn order-btn">
-        <input type="submit" value="Продолжить покупки" class="btn bascket-btn">
-      </form>
+      <a href="#close" title="Закрыть" class="close">X</a>
+      <p>Товар добавлен в корзину!</p>
+      <a class="modal-write-btn" href="#">Оформить заказ</a>
+      <a class="modal-write-btn" href="#">Продолжить покупки</a>
     </div>
   </body>
 </html>
