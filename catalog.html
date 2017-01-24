@@ -6,25 +6,28 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <div class="top-header">
+      <div class="top-header">
+        <div class="container">
           <div class="header-logo">
             <a class="header-logo-link" href="index.html">ТЕХНОМАРТ</a>
           </div>
-          <form action="#" method="get" class="search">
+          <form action="https://echo.htmlacademy.ru" method="get" class="search">
             <input type="search" name="search" placeholder="Поиск:">
+            <input type="submit" value="Отправить" class="search-btn">
           </form>
           <div class="marker">
             <a class="header-link" href="#">Закладки: 0</a>
           </div>
-          <div class="bascket">
+          <div class="basket">
             <a class="header-link" href="#">Корзина: 0</a>
           </div>
           <div class="make-order">
             <a class="header-link" href="#">Оформить заказ</a>
           </div>
         </div>
-        <div class="middle-header">
+      </div>
+      <div class="middle-header">
+        <div class="container">
           <div class="desk">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
           </div>
@@ -41,13 +44,14 @@
             <a class="user-registration" href="#">Регистрация</a>
           </div>
           <div class="user-in">
-            <a class="profile" href="#">Равшан Джамшутович</a>
-            <a class="exit" href="#">Выход</a>
-            <a class="my-order" href="#">Мои заказы</a>
+            <div class="user-block">
+              <a class="profile" href="#">Равшан Джамшутович</a>
+              <a class="exit" href="#">Выход</a>
+            </div>
+            <a class="user-info" href="#">Мои заказы</a>
             <a class="user-info" href="#">Личный кабинет</a>
           </div>
-        </div>
-        <nav class="main-nav">
+          <nav class="main-nav">
             <a href="index.html">Главная</a>
             <a href="#">Компания</a>
             <a href="#">Каталог</a>
@@ -55,7 +59,8 @@
             <a href="#">Спецпредложения</a>
             <a href="#">Доставка</a>
             <a href="#">Контакты</a>
-        </nav>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="container">
@@ -68,7 +73,7 @@
       <h1>Перфораторы</h1>
       <div class="catalog-content">
         <div class="catalog-left">
-          <form class="making-item" action="#" method="post">
+          <form class="making-item" action="https://echo.htmlacademy.ru" method="post">
             <p>Фильтр</p>
             <div class="price">
               <label for="price-selection">Цена</label>
@@ -101,8 +106,8 @@
               <a class="sorting-item" href="#">По функчионалу</a>
             </div>
             <div class="sorting-right">
-              <a class="sorting-item up" href="#">По возрастанию</a>
-              <a class="sorting-item down" href="#">По убыванию</a>
+              <a class="sorting-item-up" href="#">По возрастанию</a>
+              <a class="sorting-item-down" href="#">По убыванию</a>
             </div>
           </div>
           <div class="catalog-item">
@@ -214,33 +219,40 @@
         </p>
       </div>
     </main>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-logo">
+    <footer>
+      <div class="footer-top">
+        <div class="container">
           <div class="footer-logo">
             <a class="footer-logo-link" href="index.html">ТЕХНОМАРТ</a>
           </div>
+          <nav class="footer-nav">
+            <a href="#">Компания</a>
+            <a href="#">Новости</a>
+            <a href="#">Каталог</a>
+            <a href="#">Доставка</a>
+            <a href="#">Контакты</a>
+          </nav>
+          <div class="footer-contacts">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>+7 (812) 555-05-55</p>
+          </div>
+          <nav class="footer-sub-nav">
+            <a href="#">Материалы</a>
+            <a href="#">Техника</a>
+            <a href="#">Инструмент</a>
+            <a href="#">Спецпредложения</a>
+          </nav>
         </div>
-        <nav class="footer-nav">
-          <a href="#">Компания</a>
-          <a href="#">Новости</a>
-          <a href="#">Каталог</a>
-          <a href="#">Доставка</a>
-          <a href="#">Контакты</a>
-        </nav>
-        <div class="footer-contacts">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>+7 (812) 555-05-55</p>
-        </div>
-        <nav class="footer-sub-nav">
-          <a href="#">Материалы</a>
-          <a href="#">Техника</a>
-          <a href="#">Инструмент</a>
-          <a href="#">Спецпредложения</a>
-        </nav>
-        <div class="footer-bottom">
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
           <div class="footer-copyright">
-            <p>2010–2017 Компания «Техномарт» Все права защищены</p>
+            <p>
+              2010–2017 Компания «Техномарт»
+            </p>
+            <p>
+              Все права защищены
+            </p>
           </div>
           <div class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
