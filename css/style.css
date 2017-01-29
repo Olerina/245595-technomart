@@ -1,0 +1,126 @@
+body {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
+.slider-text,
+.top-item,
+.service-text,
+.breadcrumbs,
+.catalog-content {
+  font-family: "PT Sans", "Verdana", sans-serif;
+}
+.top-item-btn,
+.partners {
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+.promo-item,
+.slider-title,
+.top-item,
+.service-slider-item,
+.price-selection,
+.option-title {
+  font-weight: bold;
+}
+.service-text,
+.breadcrumbs,
+.filter,
+.catalog-submit,
+.sorting,
+.navigation {
+  font-size: 13px;
+}
+.header-adress,
+.btn {
+  font-size: 14px;
+}
+.option {
+  font-size: 15px;
+}
+.desk,
+.footer-bottom,
+.user-nav {
+  font-size: 16px;
+}
+.footer-top {
+  font-size: 18px;
+}
+.phone,
+.user-btn,
+.service-slider-item {
+  font-size: 21px;
+}
+.header-logo-link,
+.promo-item {
+  font-size: 24px;
+}
+.slider-text,
+.top-item-title,
+.partners,
+.subject,
+.caption,
+.footer-logo,
+.main-bottom {
+  font-size: 30px;
+}
+.slider-title,
+.service-subtitle {
+  font-size: 36px;
+}
+.main-nav {
+  line-height: 17px;
+}
+.top-item-title,
+.partners,
+.option {
+  line-height: 20px;
+}
+.desk {
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+.header-logo-link,
+.header-adress,
+.slider-text,
+.caption,
+.service-text,
+.service-subtitle,
+.footer-top,
+.main-bottom {
+  line-height: 24px;
+}
+.promo-item,
+.slider-title,
+.subject,
+.service-slider-item,
+.footer-logo,
+.price-selection,
+.option-title {
+  line-height: 30px;
+}
+header,
+.promo,
+.btn,
+.service-slider-item,
+.footer-bottom,
+.footer-logo-link {
+  color: #ffffff;
+}
+.phone {
+  color: #e9292a;
+}
+.header-adress,
+.subject,
+.service-subtitle,
+.active {
+  color: #32425c;
+}
+.footer-top {
+  color: #f1f5f7;
+}
+.sub-nav,
+.footer-link {
+  color: #ffd180;
+}
