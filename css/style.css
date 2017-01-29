@@ -11,10 +11,11 @@ body {
 .catalog-content {
   font-family: "PT Sans", "Verdana", sans-serif;
 }
-.top-item-btn,
-.partners {
+/*находится внутри top-item, нужно задавать шрифт повторно*/
+.top-item-btn {
   font-family: "Cuprum", "Arial", sans-serif;
 }
+/*сортировку стилей поправить при дальнейшей спилизации*/
 .promo-item,
 .slider-title,
 .top-item,
@@ -26,9 +27,9 @@ body {
 .service-text,
 .breadcrumbs,
 .filter,
-.catalog-submit,
-.sorting,
-.navigation {
+.catalog-submit, /*line-height от body*/
+.sorting, /*line-height от body*/
+.navigation /*line-height от body*/ {
   font-size: 13px;
 }
 .header-adress,
