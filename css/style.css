@@ -23,18 +23,27 @@ a {
   background-color: #f1f5f7;
 }
 .top-header {
-  min-height: 42px;
+  height: 42px;
   background-color: #293449;
 }
 .top-header-layout {
   display: flex;
-  min-height: 42px;
+  height: 42px;
   align-items: center;
 }
 .header-logo {
   width: 220px;
   background-color: #ee3643;
   min-height: 42px;
+  box-shadow: 0 5px 0 0 #b52933;
+}
+.header-logo:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+.header-logo:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 .header-logo-link {
   display: block;
@@ -44,7 +53,7 @@ a {
 }
 .search {
   width: 270px;
-  min-height: 42px;
+  position: relative;
 }
 .search input[type="search"] {
   width: 270px;
@@ -54,15 +63,64 @@ a {
   padding-bottom: 12px;
   font: inherit;
   color: #000000;
+  border: none;
+  background-color: #293449;
+}
+.search input[type="search"]:hover {
+  background-color: #212a3a;
+}
+.search input[type="search"]:focus {
+  background-color: #ffffff;
 }
 .search-btn {
   display: none;
+}
+.search::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -239px -111px;
+  opacity: 0.3;
+}
+.search:hover::before {
+  opacity: 1;
 }
 .marker,
 .basket,
 .make-order {
   width: 170px;
-  min-height: 42px;
+  position: relative;
+}
+.marker .header-link {
+  padding-left: 42px;
+  padding-top: 20px;
+}
+.marker .header-link:hover {
+  background-color: #212a3a;
+}
+.marker .header-link:active {
+  background-color: #161d29;
+}
+.marker .header-link::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -62px -15px;
+  opacity: 0.3;
+}
+.marker .header-link:hover::before {
+  opacity: 1;
+}
+.marker .header-link:active::before {
+  opacity: 0.5;
 }
 .make-order {
   background-color: #63a63e;
