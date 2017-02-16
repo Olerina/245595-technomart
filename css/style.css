@@ -96,8 +96,10 @@ a {
   position: relative;
 }
 .marker .header-link {
-  padding-left: 42px;
-  padding-top: 20px;
+  display: block;
+  padding: 14px 20px;
+  padding-left: 43px;
+  padding-top: 9px;
 }
 .marker .header-link:hover {
   background-color: #212a3a;
@@ -108,7 +110,7 @@ a {
 .marker .header-link::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 15px;
   width: 20px;
   height: 20px;
@@ -122,15 +124,55 @@ a {
 .marker .header-link:active::before {
   opacity: 0.5;
 }
+.basket .header-link {
+  display: block;
+  padding: 14px 20px;
+  padding-left: 48px;
+  padding-top: 9px;
+}
+.basket .header-link:hover {
+  background-color: #212a3a;
+}
+.basket .header-link:active {
+  background-color: #161d29;
+}
+.basket .header-link::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  width: 20px;
+  height: 20px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -15px -15px;
+  opacity: 0.3;
+}
+.basket .header-link:hover::before {
+  opacity: 1;
+}
+.basket .header-link:active::before {
+  opacity: 0.5;
+}
 .make-order {
   background-color: #63a63e;
+}
+.make-order:hover {
+  background-color: #5fbb2d;
+}
+.make-order:active {
+  background-color: #518534;
+}
+.make-order .header-link {
+  display: block;
+  padding: 14px 20px;
+  padding-top: 9px;
 }
 .header-link {
   display: block;
   padding: 14px 20px;
 }
 .middle-header {
-  padding-bottom: 62px;
+  padding-bottom: 10px;
   margin-bottom: 60px;
   min-height: 218px;
   background-color: #f1f5f7;
@@ -140,9 +182,9 @@ a {
 }
 .middle-header-layout {
   display: flex;
-  min-height: 158px;
+  min-height: 111px;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 48px;
 }
 .desk {
   width: 205px;
@@ -152,7 +194,9 @@ a {
   color: #ee3643;
   padding-left: 51px;
   padding-right: 45px;
-  padding-top: 10px;
+}
+.desk p {
+  margin: 0;
 }
 .header-contacts {
   width: 300px;
@@ -160,18 +204,94 @@ a {
 .phone {
   font-size: 21px;
   color: #e9292a;
+  border: solid 3px #ffffff;
+  width: 264px;
+  height: 39px;
+  position: relative;
+}
+.phone p {
+  margin: 0;
+  padding-left: 70px;
+  padding-top: 11px;
+}
+.phone p::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -239px -62px;
 }
 .header-adress {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
+.header-adress p {
+  margin: 0;
+  margin-top: 3px;
+  padding-left: 10px;
+}
 .user-block {
   width: 300px;
+}
+.user-out {
+  display: flex;
+  justify-content: space-between;
 }
 .user-btn {
   font-size: 21px;
   color: #000000
+}
+.login {
+  width: 66px;
+  height: 26px;
+  padding-left: 47px;
+  padding-top: 9px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  position: relative;
+}
+.login:hover {
+  color: #ee3643;
+}
+.login:active {
+  color: #e4e4e4;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -170px -123px;
+}
+.login:hover::before {
+  background-position: -125px -170px;
+}
+.login:active::before {
+  background-position: -170px -123px;
+}
+.registration {
+  width: 102px;
+  height: 26px;
+  padding-left: 24px;
+  padding-top: 9px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+.registration:hover {
+  color: #ee3643;
+}
+.registration:active {
+  color: #e4e4e4;
 }
 .user-nav {
   font-size: 16px;
@@ -183,10 +303,12 @@ a {
 .main-nav {
   display: flex;
   min-height: 60px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   line-height: 17px;
   background-color: #32425c;
+  padding-left: 21px;
+  padding-right: 22px;
 }
 .btn {
   font-size: 14px;
