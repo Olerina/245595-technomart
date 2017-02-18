@@ -52,7 +52,7 @@
           <nav class="main-nav">
             <a>Главная</a>
             <a href="#">Компания</a>
-            <a href="#">Каталог</a>
+            <a href="catalog.html">Каталог</a>
             <a href="#">Новости</a>
             <a href="#">Спецпредложения</a>
             <a href="#">Доставка</a>
@@ -74,19 +74,23 @@
               <a class="promo-btn" href="#">на все случаи</a>
             </div>
             <div class="slider">
-              <input type="radio" name="slider1" id="slider1_1" checked="checked">
-              <label for="slider1_1"></label>
-              <div class="slider-show">
-                <p class="slider-title">Перфораторы</p>
-                <p class="slider-text">Настоящие мужские игрушки</p>
-                <a class="btn slider-btn" href="#">Открыть каталог</a>
+              <input type="radio" id="btn-1" name="toggle" checked="checked">
+              <input type="radio" id="btn-2" name="toggle">
+              <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
               </div>
-              <input type="radio" name="slider1" id="slider1_2">
-              <label for="slider1_2"></label>
-              <div class="slider-hide">
-                <p class="slider-title">Дрели</p>
-                <p class="slider-text">Соседям на радость!</p>
-                <a class="btn slider-btn" href="#">Открыть каталог</a>
+              <div class="slides">
+                <div class="slide">
+                  <p class="slider-title">Перфораторы</p>
+                  <p class="slider-text">Настроящие мужские игрушки</p>
+                  <a class="btn slider-btn" href="#">Открыть каталог</a>
+                </div>
+                <div class="slide">
+                  <p class="slider-title">Дрели</p>
+                  <p class="slider-text">Соседям на радость!</p>
+                  <a class="btn slider-btn" href="#">Открыть каталог</a>
+                </div>
               </div>
               <a class="next" href="next"></a>
               <a class="prev" href="prev"></a>
@@ -108,10 +112,12 @@
           </div>
         </section>
         <section class="top-products">
-          <h2 class="subject">
-            Популярные товары:
+          <div class="top-heading">
+            <h2 class="subject">
+              Популярные товары:
+            </h2>
             <a class="btn top-btn" href="#">Все популярные товары</a>
-          </h2>
+          </div>
           <div class="top-item-layout">
             <article class="top-item">
               <img src="img/bfg-9000.jpg" width="218" height="156" alt="Перфоратор BOSH BFG 9000">
@@ -156,10 +162,12 @@
           </div>
         </section>
         <section class="top-maker">
-          <h2 class="subject">
-            Популярные производители:
-            <a class="btn top-btn top-maker-btn" href="#">Все производители</a>
-          </h2>
+          <div class="top-heading">
+            <h2 class="subject">
+              Популярные производители:
+            </h2>
+            <a class="btn top-maker-btn" href="#">Все производители</a>
+          </div>
           <div class="top-maker-layout">
             <div class="top-maker-item">
               <a class="maker-btn" href="#"><img src="img/bosch.jpg" width="126" height="37" alt="BOSH"></a>
@@ -282,7 +290,7 @@
           <nav class="footer-nav">
             <a href="#">Компания</a>
             <a href="#">Новости</a>
-            <a href="#">Каталог</a>
+            <a href="catalog.html">Каталог</a>
             <a href="#">Доставка</a>
             <a href="#">Контакты</a>
           </nav>
