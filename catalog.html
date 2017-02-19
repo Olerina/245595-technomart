@@ -99,7 +99,7 @@
                 </div>
               </div>
               <section class="option brends">
-                <h2 class="option-title">Производители</h2>
+                <h2 class="option-title">Производители:</h2>
                 <ul class="brends-list">
                   <li class="brends-item">
                     <input type="checkbox" checked id="bosch">
@@ -124,7 +124,7 @@
                 </ul>
               </section>
               <section class="option energy">
-                <h2 class="option-title">Питание</h2>
+                <h2 class="option-title">Питание:</h2>
                 <ul class="energy-list">
                   <li class="energy-item">
                     <input type="radio" id="accumulator" name="radio" checked>
@@ -142,11 +142,17 @@
           <div class="catalog-right">
             <div class="sorting">
               <p>Сортировка</p>
-              <div class="sorting-left">
-                <a class="sorting-item active-sorting">По цене</a>
-                <a class="sorting-item" href="#">По типу</a>
-                <a class="sorting-item" href="#">По функционалу</a>
-              </div>
+              <ul class="sorting-left">
+                <li class="sorting-left-item">
+                  <a class="sorting-item active-sorting">По цене</a>
+                </li>
+                <li class="sorting-left-item">
+                  <a class="sorting-item" href="#">По типу</a>
+                </li>
+                <li class="sorting-left-item">
+                  <a class="sorting-item last-sorting" href="#">По функционалу</a>
+                </li>
+              </ul>
               <div class="sorting-right">
                 <a class="sorting-item-up sorting-active" href="#">По возрастанию</a>
                 <a class="sorting-item-down" href="#">По убыванию</a>
@@ -336,11 +342,13 @@
         </div>
       </div>
     </footer>
-    <div class="modal-write">
-      <a href="#close" title="Закрыть" class="close">X</a>
-      <p>Товар добавлен в корзину!</p>
-      <a class="modal-write-btn" href="#">Оформить заказ</a>
-      <a class="modal-write-btn" href="#">Продолжить покупки</a>
+    <div class="modal-basket">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div class="modal-basket-title">Товар добавлен в корзину!</div>
+      <div class="modal-basket-btn">
+        <a class="modal-write-btn-1" href="#">Оформить заказ</a>
+        <a class="modal-write-btn-2" href="#">Продолжить покупки</a>
+      </div>
     </div>
   </body>
 </html>

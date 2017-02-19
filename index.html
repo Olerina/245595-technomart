@@ -343,13 +343,18 @@
       </div>
     </footer>
     <div class="modal-write">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <form class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
-        <a href="#close" title="Закрыть" class="close">X</a>
-        <label>Ваше имя: <input type="text" name="username" placeholder="Представьтесь, пожалуйста"></label>
-        <label>Ваш e-mail: <input type="email" name="email" placeholder="Для отправки ответа"></label>
-        <label>Текст письма:<textarea name="comment" rows="10">В свободной форме</textarea></label>
-        <input type="submit" value="Отправить" class="btn write-btn">
+        <label class="user-name" for="user-name">Ваше имя:</label>
+        <label class="user-email" for="email">Ваш e-mail:</label>
+        <input id="user-name" type="text" name="username" placeholder="Представьтесь, пожалуйста">
+        <input id="email" type="email" name="email" placeholder="Для отправки ответа">
+        <label for="user-comment" class="user-comment">Текст письма:</label>
+        <textarea id="user-comment" name="comment" rows="6">В свободной форме</textarea>
       </form>
+      <div class="write-submit">
+        <input type="submit" value="Отправить" class="btn write-btn">
+      </div>
     </div>
     <div class="modal-content-map">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
