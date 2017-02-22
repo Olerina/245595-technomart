@@ -311,6 +311,7 @@ a {
 }
 .profile {
   display: inline-block;
+  vertical-align: middle;
   padding: 10px;
   padding-bottom: 14px;
   padding-left: 49px;
@@ -339,13 +340,13 @@ a {
 .exit {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   min-width: 25px;
   font-size: 0;
 }
 .exit::before {
   content: "";
   position: absolute;
-  bottom: 5px;
   left: 30px;
   width: 20px;
   height: 20px;
@@ -538,7 +539,7 @@ a {
   height: 10px;
   margin-left: -100px;
   text-align: center;
-  z-index: 1000;
+  z-index: 100;
 }
 .slider-controls label {
   display: inline-block;
@@ -686,6 +687,7 @@ a {
   line-height: 38px;
   padding-left: 28px;
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   font-weight: normal;
 }
@@ -694,6 +696,7 @@ a {
   border-radius: 2px;
   line-height: 18px;
   display: inline-block;
+  vertical-align: middle;
   margin-right: 24px;
 }
 .top-btn:hover {
@@ -843,15 +846,15 @@ a {
    border: 20px solid white;
    border-left-color: #ee3643;
 }
-.new-item {
+.top-new {
+  position: relative;
+}
+.top-new::before {
+  content: "";
   position: absolute;
-  top: -1px;
-  right: -1px;
+  left: 160px;
   width: 60px;
   height: 60px;
-  text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;
   background: url("../img/new flag.png") no-repeat;
 }
 .top-maker {
@@ -866,6 +869,7 @@ a {
   border-radius: 2px;
   line-height: 18px;
   display: inline-block;
+  vertical-align: middle;
   margin-right: 24px;
 }
 .top-maker-btn:hover {
@@ -1226,6 +1230,7 @@ a {
 .price-controls label {
   font-size: 16px;
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
 }
 .max-price {
@@ -1408,6 +1413,7 @@ a {
 .sorting-item-up {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   min-width: 25px;
   font-size: 0;
 }
@@ -1427,6 +1433,7 @@ a {
 .sorting-item-down {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   min-width: 25px;
   font-size: 0;
 }
@@ -1633,6 +1640,31 @@ a {
 .footer-creator p {
   margin-left: 11px;
 }
+@keyframes bounce {
+  0%   {
+    transform: translateX(-2000px);
+  }
+  70%  {
+    transform: translateX(30px);
+  }
+  90%  {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
 .modal-write {
   display: none;
   position: fixed;
@@ -1644,6 +1676,14 @@ a {
           transform: translate(-50%,-50%);
   background: #ffffff;
   border-top: 7px solid #ee3643;
+  z-index: 1000;
+}
+.modal-write-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .modal-content-close {
   position: absolute;
@@ -1750,8 +1790,8 @@ a {
   height: 446px;
   -webkit-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
-  background: #e9e5dc url("../img/map-big.jpg");
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
 }
 .modal-basket {
   display: none;
@@ -1764,6 +1804,10 @@ a {
           transform: translate(-50%,-50%);
   background: #ffffff;
   border-top: 7px solid #ee3643;
+  z-index: 1000;
+}
+.modal-content-show {
+  display: block;
 }
 .modal-basket-title {
   font-size: 30px;

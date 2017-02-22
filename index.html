@@ -5,7 +5,8 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/min-style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -157,8 +158,7 @@
               <div class="top-item-sale">30500 р.</div>
               <div class="top-item-price">25500 р.</div>
             </article>
-            <article class="top-item">
-              <div class="new-item">новинка</div>
+            <article class="top-item top-new">
               <div class="top-item-btn">
                 <a class="item-buy" href="#">Купить</a>
                 <a class="item-bookmark" href="#">В закладки</a>
@@ -285,8 +285,8 @@
               Вы можете забрать товар сами,<br>
               заехав в наш офис:
             </p>
-            <a class="map" href="#"><img src="img/map-small.jpg" alt="Большая Конюшенная ул.,19" width="300" height="158"></a>
-            <a class="btn write-us" href="#">Заблудились? Напишите нам!</a>
+            <a class="map js-open-map" href="#"><img src="img/map-small.jpg" alt="Большая Конюшенная ул.,19" width="300" height="158"></a>
+              <a class="btn write-us" href="#">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -344,21 +344,22 @@
     </footer>
     <div class="modal-write">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <form class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
+      <form id="write-form" class="modal-write-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="user-name" for="user-name">Ваше имя:</label>
         <label class="user-email" for="email">Ваш e-mail:</label>
-        <input id="user-name" type="text" name="username" placeholder="Представьтесь, пожалуйста">
-        <input id="email" type="email" name="email" placeholder="Для отправки ответа">
+        <input id="user-name" type="text" name="username" placeholder="Представьтесь, пожалуйста" required>
+        <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
         <label for="user-comment" class="user-comment">Текст письма:</label>
-        <textarea id="user-comment" name="comment" rows="6">В свободной форме</textarea>
+        <textarea id="user-comment" name="comment" rows="6" required>В свободной форме</textarea>
       </form>
       <div class="write-submit">
-        <input type="submit" value="Отправить" class="btn write-btn">
+        <input type="submit" value="Отправить" class="btn write-btn" form="write-form">
       </div>
     </div>
     <div class="modal-content-map">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <div id="yandex-map"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6163110544366!2d30.32250320627837!3d59.938567918659835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487672842609" width="940" height="446" style="border:0" allowfullscreen></iframe>
     </div>
+    <script src="js/min-script.js"></script>
   </body>
 </html>
